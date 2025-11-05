@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inraxo — Expert-led AI training & RLHF</title>
+  <meta name="description" content="Inraxo pairs AI teams with vetted domain experts for high-quality training data, RLHF feedback, and model evaluation." />
+  <meta name="author" content="Inraxo" />
+  <!-- Tailwind CDN for quick prototyping -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{--bg:#ffffff;--fg:#0b0b0b;--muted:#6b6b6b;--accent:#000000}
+    body{background:var(--bg);color:var(--fg);}
+    .brand{color:var(--fg)}
+    .mono-btn{border:1px solid rgba(0,0,0,0.08)}
+    .glass{background:rgba(255,255,255,0.8);backdrop-filter:blur(6px)}
+  </style>
+</head>
+<body class="antialiased text-black bg-white">
+  <!-- Header -->
+  <header class="border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="#" class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded bg-black flex items-center justify-center text-white font-bold">IN</div>
+          <div>
+            <div class="text-lg font-semibold">Inraxo</div>
+            <div class="text-xs text-gray-500">Expert-led AI training</div>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-8 text-sm">
+          <a href="#services" class="hover:underline">Services</a>
+          <a href="#process" class="hover:underline">How we work</a>
+          <a href="#experts" class="hover:underline">Experts</a>
+          <a href="#pilot" class="hover:underline">Pilot</a>
+        </nav>
+
+        <div class="flex items-center gap-4">
+          <a href="#expert" class="hidden md:inline-block text-sm px-4 py-2 rounded-md mono-btn">Be an expert</a>
+          <a href="#pilot" class="inline-flex items-center gap-3 px-5 py-3 rounded-md bg-black text-white font-medium">Early access</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="max-w-7xl mx-auto px-6 lg:px-8 py-20">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7">
+          <p class="text-sm font-medium text-gray-600">Enterprise • Domain experts • Secure</p>
+          <h1 class="mt-4 text-4xl lg:text-5xl font-extrabold leading-tight">Human expertise. Industrial delivery. Minimal risk.</h1>
+          <p class="mt-6 text-lg text-gray-700">Inraxo pairs AI teams with vetted subject-matter experts to build model-ready datasets, RLHF feedback, and evaluation suites — designed for production systems and compliance needs.</p>
+
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="#pilot" class="inline-flex items-center gap-3 px-5 py-3 rounded-md bg-black text-white font-medium">Join Early Access</a>
+            <a href="#services" class="inline-flex items-center gap-3 px-5 py-3 rounded-md mono-btn">Our services</a>
+          </div>
+
+          <div class="mt-8 text-sm text-gray-500">
+            <strong>Notable:</strong> Limited pilot slots — we prioritize enterprise-grade security and human-in-the-loop quality.
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="rounded-2xl p-6 shadow-lg border border-gray-100">
+            <div class="p-6">
+              <h3 class="text-lg font-semibold">Early Access — Pilot Signup</h3>
+              <p class="text-sm text-gray-600 mt-2">Secure a pilot slot to validate models with domain experts. Priority onboarding for the first partners.</p>
+
+              <form class="mt-4 space-y-4" action="#" onsubmit="event.preventDefault(); alert('Thanks — we received your request (prototype).');">
+                <div>
+                  <label class="text-xs font-medium text-gray-600">Company</label>
+                  <input required class="mt-1 block w-full rounded-md border border-gray-200 px-3 py-2 text-sm" placeholder="Acme AI" />
+                </div>
+                <div>
+                  <label class="text-xs font-medium text-gray-600">Brief project objective</label>
+                  <input required class="mt-1 block w-full rounded-md border border-gray-200 px-3 py-2 text-sm" placeholder="E.g., legal contract classification" />
+                </div>
+                <div class="flex gap-2">
+                  <input required class="flex-1 rounded-md border border-gray-200 px-3 py-2 text-sm" placeholder="Email" />
+                  <input class="w-28 rounded-md border border-gray-200 px-3 py-2 text-sm" placeholder="Phone (optional)" />
+                </div>
+                <div class="flex items-center gap-3">
+                  <button class="px-4 py-2 rounded-md bg-black text-white font-medium">Request pilot</button>
+                  <a href="#services" class="text-sm text-gray-600">See services</a>
+                </div>
+              </form>
+
+              <div class="mt-4 text-xs text-gray-400">We sign NDAs and follow enterprise-grade data handling.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Mission -->
+    <section id="about" class="py-12 border-t border-gray-100">
+      <div class="max-w-5xl mx-auto px-6 lg:px-8">
+        <div class="text-center">
+          <h2 class="text-2xl font-bold">Who we are</h2>
+          <p class="mt-3 text-gray-600">We’re operators and operators first — project managers, annotators, and engineers with deep experience running model-training programs. Inraxo brings that discipline to teams that need production-ready AI.</p>
+        </div>
+
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-gray-700">
+          <div class="p-6 border rounded-lg">
+            <h4 class="font-semibold">Mission</h4>
+            <p class="mt-2">Bridge domain expertise and AI at scale — so models learn from people who actually understand the domain.</p>
+          </div>
+          <div class="p-6 border rounded-lg">
+            <h4 class="font-semibold">Principles</h4>
+            <ul class="mt-2 space-y-1 text-gray-600">
+              <li>Quality first — reviewer layers & SLAs</li>
+              <li>Secure handling — enterprise NDAs & encryption</li>
+              <li>Transparent pricing & fair pay for experts</li>
+            </ul>
+          </div>
+          <div class="p-6 border rounded-lg">
+            <h4 class="font-semibold">What we don’t do</h4>
+            <p class="mt-2 text-gray-600">We don’t sell low-quality, unvetted labeling or speculative datasets. We deliver expert-reviewed outputs with attribution and clear ownership.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services / Use Cases -->
+    <section id="services" class="py-14">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center">
+          <h2 class="text-3xl font-bold">Services & use cases</h2>
+          <p class="mt-3 text-gray-600">Focused, measurable deliverables tailored to model pipelines.</p>
+        </div>
+
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <article class="p-6 border rounded-lg">
+            <h3 class="font-semibold">Expert Annotations</h3>
+            <p class="mt-2 text-gray-600">Curated labeling for sensitive domains with inter-annotator agreement & reviewer arbitration.</p>
+            <ul class="mt-3 text-sm text-gray-600 space-y-1">
+              <li>Formats: JSONL, COCO, CSV</li>
+              <li>Taxonomy design & custom schema</li>
+            </ul>
+          </article>
+
+          <article class="p-6 border rounded-lg">
+            <h3 class="font-semibold">RLHF & Prompt Feedback</h3>
+            <p class="mt-2 text-gray-600">Structured human feedback for reward models, label calibration, and safety alignment.</p>
+            <ul class="mt-3 text-sm text-gray-600 space-y-1">
+              <li>Feedback templates & scoring</li>
+              <li>Data for reward model training</li>
+            </ul>
+          </article>
+
+          <article class="p-6 border rounded-lg">
+            <h3 class="font-semibold">Model Evaluation</h3>
+            <p class="mt-2 text-gray-600">Expert-curated test suites and edge-case scenarios with actionable reports.</p>
+            <ul class="mt-3 text-sm text-gray-600 space-y-1">
+              <li>Benchmarks & diagnostics</li>
+              <li>Integration scripts</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-6 border rounded-lg">
+            <h4 class="font-semibold">Legal</h4>
+            <p class="mt-2 text-gray-600">Contract clause classification, risk detection, and clause extraction.</p>
+          </div>
+          <div class="p-6 border rounded-lg">
+            <h4 class="font-semibold">Healthcare</h4>
+            <p class="mt-2 text-gray-600">Entity extraction, redaction pipelines, and clinical note structuring.</p>
+          </div>
+          <div class="p-6 border rounded-lg">
+            <h4 class="font-semibold">Finance</h4>
+            <p class="mt-2 text-gray-600">Document parsing, reconciliation, and high-precision extraction.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works (process) -->
+    <section id="process" class="py-14 border-t border-gray-100">
+      <div class="max-w-6xl mx-auto px-6 lg:px-8">
+        <div class="text-center">
+          <h2 class="text-3xl font-bold">How we work</h2>
+          <p class="mt-3 text-gray-600">A disciplined, transparent delivery model.</p>
+        </div>
+
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <ol class="space-y-6">
+              <li>
+                <h4 class="font-semibold">1. Scope & refine</h4>
+                <p class="text-gray-600 mt-1 text-sm">We help define the task, select metrics, and design the annotation schema.</p>
+              </li>
+              <li>
+                <h4 class="font-semibold">2. Match & test</h4>
+                <p class="text-gray-600 mt-1 text-sm">We present vetted experts and test tasks before assigning full work.</p>
+              </li>
+              <li>
+                <h4 class="font-semibold">3. Annotate & review</h4>
+                <p class="text-gray-600 mt-1 text-sm">Annotation with reviewer layers, A/B sampling, and inter-annotator checks.</p>
+              </li>
+              <li>
+                <h4 class="font-semibold">4. Deliver & integrate</h4>
+                <p class="text-gray-600 mt-1 text-sm">Model-ready datasets, evaluation reports, and integration scripts.</p>
+              </li>
+            </ol>
+          </div>
+
+          <div>
+            <div class="p-6 border rounded-lg">
+              <h4 class="font-semibold">Quick commitments</h4>
+              <ul class="mt-3 text-sm text-gray-600 space-y-2">
+                <li><strong>Turnaround:</strong> Pilot in 2–3 weeks</li>
+                <li><strong>Quality:</strong> SLA-backed reviewer checks</li>
+                <li><strong>Security:</strong> Encrypted transfers & NDA</li>
+              </ul>
+            </div>
+
+            <div class="mt-6 p-6 border rounded-lg">
+              <h4 class="font-semibold">Deliverable formats</h4>
+              <p class="text-gray-600 text-sm mt-2">JSONL, COCO, TFRecords — plus integration scripts and evaluation reports.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experts (anonymous) -->
+    <section id="experts" class="py-14">
+      <div class="max-w-6xl mx-auto px-6 lg:px-8">
+        <div class="text-center">
+          <h2 class="text-3xl font-bold">Our expert network</h2>
+          <p class="mt-3 text-gray-600">Vetted specialists across industries — each completes a test task and reviewer assessment before assignment.</p>
+        </div>
+
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-6 border rounded-lg text-gray-700">
+            <div class="font-semibold">Clinical Annotator</div>
+            <div class="mt-2 text-sm text-gray-600">8+ years in clinical coding and structured data extraction. Focus: entity recall & PHI-safe redaction.</div>
+          </div>
+
+          <div class="p-6 border rounded-lg text-gray-700">
+            <div class="font-semibold">Legal SME</div>
+            <div class="mt-2 text-sm text-gray-600">Experienced paralegal & contract analyst; tasks: clause tagging, risk scoring, taxonomy design.</div>
+          </div>
+
+          <div class="p-6 border rounded-lg text-gray-700">
+            <div class="font-semibold">Finance Data Specialist</div>
+            <div class="mt-2 text-sm text-gray-600">Background in financial reconciliation and statement parsing; high-precision extraction workflows.</div>
+          </div>
+        </div>
+
+        <div class="mt-6 text-sm text-gray-500">Note: expert names withheld at request; full profiles available to pilot partners under NDA.</div>
+      </div>
+    </section>
+
+    <!-- Compliance & Ethics -->
+    <section id="compliance" class="py-14 border-t border-gray-100">
+      <div class="max-w-5xl mx-auto px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold">Compliance & ethics</h2>
+        <p class="mt-3 text-gray-600">We treat data responsibly — NDAs, encryption, audit logs, and reviewer arbitration are standard.</p>
+
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-gray-700">
+          <div class="p-6 border rounded-lg">
+            <div class="font-semibold">NDAs & IP</div>
+            <p class="mt-2 text-gray-600">IP assignment and client ownership of datasets included in contracts.</p>
+          </div>
+          <div class="p-6 border rounded-lg">
+            <div class="font-semibold">Privacy</div>
+            <p class="mt-2 text-gray-600">PII redaction, encrypted storage, and GDPR-aware practices.</p>
+          </div>
+          <div class="p-6 border rounded-lg">
+            <div class="font-semibold">Fair pay</div>
+            <p class="mt-2 text-gray-600">Transparent expert compensation and timely payouts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pilot CTA -->
+    <section id="pilot" class="py-12">
+      <div class="max-w-6xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div>
+          <h3 class="text-2xl font-bold">Interested in a pilot?</h3>
+          <p class="mt-2 text-gray-600">Limited early-access pilots with prioritized support and discounted rates for founding partners.</p>
+        </div>
+        <div>
+          <a href="#" class="px-5 py-3 rounded-md bg-black text-white font-semibold">Request Pilot</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-100">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div>
+          <div class="text-lg font-bold">Inraxo</div>
+          <p class="text-sm text-gray-600 mt-2">Expert-led training for production-ready AI. NDAs, secure pipelines, enterprise SLAs.</p>
+        </div>
+        <div>
+          <div class="font-semibold">Contact</div>
+          <p class="text-sm text-gray-600 mt-3">hello@inraxo.com<br/>+91 00000 00000</p>
+        </div>
+        <div>
+          <div class="font-semibold">Legal</div>
+          <ul class="mt-3 text-sm text-gray-600 space-y-2">
+            <li><a href="#legal">Privacy</a></li>
+            <li><a href="#legal">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-gray-50 py-4">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-sm text-gray-500">© <span id="year"></span> Inraxo. All rights reserved.</div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
